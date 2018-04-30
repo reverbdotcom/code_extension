@@ -1,0 +1,22 @@
+<%= form_tag(categories_path, method: :get) do -%>
+  <div class="form-group">
+    <label for="query">Category Search</label>
+    <input class="form-control" type="text" name="query" placeholder="Enter Category Name">
+  </div>
+
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+<% end %>
+
+<% if @categories.present? %>
+  <ul class="list-group">
+    <% @categories.each do |category| %>
+      <li class="list-group-item">
+        <%= category['full_name'] %>
+      </li>
+    <% end %>
+  </ul>
+<% elsif params[:query].present? %>
+  <p>Sorry. No results were found for your search.</p>
+<% end %>

@@ -1,0 +1,14 @@
+<% if @listings.present? %>
+  <ul class="list-group">
+    <% @listings.each do |listing| %>
+      <li class="d-flex list-group-item flex-row align-items-center">
+        <div class="p-2">
+            <%= image_tag(listing['photos'].first['_links']['thumbnail']['href'] )%>
+        </div>
+        <h2 class="p-2">
+            <%= listing['title'] %>
+        </h2>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
