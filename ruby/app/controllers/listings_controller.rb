@@ -12,6 +12,6 @@ class ListingsController < ApplicationController
       'Accept-Version' => '3.0',
       'Content-Type' => 'application/json'
     }
-    JSON.parse(HTTParty.get('http://api.reverb.com/api/listings/all', headers: headers).body)['listings']
+    JSON.parse(HTTParty.get('http://api.reverb.com/api/listings/all?per_page=10', headers: headers).body)['listings']
   end
 end

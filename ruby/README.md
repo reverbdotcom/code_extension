@@ -1,24 +1,19 @@
-# README
+# Ruby Code Extension
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the ruby part of the code extension.
 
-Things you may want to cover:
+## Setup
+1. Install ruby 2.5.0. We like to use rbenv, but do your thing, it's all good. (https://github.com/rbenv/rbenv)
 
-* Ruby version
+2. `gem install bundler`
 
-* System dependencies
+3. `bundle install`
 
-* Configuration
+## Running the server
 
-* Database creation
+` rails s` will start a server on port 3000. You can then see the site at http://localhost:3000
 
-* Database initialization
+## Running the tests
 
-* How to run the test suite
+`bin/rspec` runs the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
