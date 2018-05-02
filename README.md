@@ -2,7 +2,10 @@
 
 This is a code extension designed so that we can code together during an on-site interview. Our guiding principal is: **we want to see you at your best** .
 
-Some things to note:
+## Instructions
+If you bring your own computer to the interview, please ensure you are ready to go by having anything installed beforehand. If you want to use one of Reverb's computers, please tell us which code editor you prefer and which language you will be doing the extension in.
+
+## Details
 
 1. The extension solves "The Problem" stated below.
 
@@ -12,7 +15,7 @@ Some things to note:
 
 4. Our intention is not to trick you or test you; we want to collaborate. So if you have any questions about this, please reach out and ask!
 
-## The Problem
+### The Problem
 We provide an API for developers to create new experiences powered by Reverb. We'd like you to use this API to build a program with the following features:
 
 - **Category Search** — Given a string, return all categories that contain that string. For example, a search for the category "Electric" would match "Electric Guitars", "Electric Pianos", etc.
