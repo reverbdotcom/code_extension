@@ -16,7 +16,7 @@ RSpec.describe "listings page", :type => :request do
       ]
     }
 
-    stub_request(:get, "http://api.reverb.com/api/listings/all?per_page=10")
+    stub_request(:get, "https://api.reverb.com/api/listings/all?per_page=10")
       .to_return(
         status: 200,
         body: listings_response.to_json,

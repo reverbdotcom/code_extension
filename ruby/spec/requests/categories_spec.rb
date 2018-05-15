@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe "categories page", :type => :request do
   it "displays the full name of matching categories" do
 
-    stub_request(:get, "http://api.reverb.com/api/categories/flat")
+    stub_request(:get, "https://api.reverb.com/api/categories/flat")
       .to_return(
         status: 200,
         body: {categories: [{full_name: 'Guitars'}, {full_name: 'Geetars'}]}.to_json,
@@ -21,7 +21,7 @@ RSpec.describe "categories page", :type => :request do
 
   it "does not display anything if there are no matching categories" do
 
-    stub_request(:get, "http://api.reverb.com/api/categories/flat")
+    stub_request(:get, "https://api.reverb.com/api/categories/flat")
       .to_return(
         status: 200,
         body: {categories: [{full_name: 'Guitars'}, {full_name: 'Geetars'}]}.to_json,
