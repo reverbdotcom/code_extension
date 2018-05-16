@@ -1,3 +1,5 @@
+require 'reverb_client'
+
 class CategoriesController < ApplicationController
   def index
     @categories = search_categories(params[:query])
@@ -14,11 +16,6 @@ class CategoriesController < ApplicationController
   end
 
   def load_categories
-    headers = {
-      'Accept' => 'application/json',
-      'Accept-Version' => '3.0',
-      'Content-Type' => 'application/json'
-    }
-    JSON.parse(HTTParty.get('http://api.reverb.com/api/categories/flat', headers: headers).body)['categories']
+    ReverbClient.new.categories
   end
 end

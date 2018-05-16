@@ -1,36 +1,40 @@
 require 'rails_helper'
+require 'reverb_client'
 
 RSpec.describe "categories page", :type => :request do
-  it "displays the full name of matching categories" do
+  let(:categories) do
+    [{'full_name' => 'Guitars'}, {'full_name' => 'Geetars'}]
+  end
 
-    stub_request(:get, "http://api.reverb.com/api/categories/flat")
-      .to_return(
-        status: 200,
-        body: {categories: [{full_name: 'Guitars'}, {full_name: 'Geetars'}]}.to_json,
-        headers: {}
-      )
+  let(:client) do
+    instance_double(ReverbClient, categories: categories)
+  end
 
-    get categories_path(query: 'guitar')
+  let(:query) do
+  end
 
-    # one result and it is "Guitars"
-    assert_select "ul.list-group" do
-      assert_select "li.list-group-item", "Guitars"
-      assert_select "li.list-group-item", 1
+  before do
+    allow(ReverbClient).to receive(:new) { client }
+  end
+
+  context 'with matching categories' do
+    it "displays the full name of matching categories" do
+      get categories_path(query: 'guitar')
+
+      # one result and it is "Guitars"
+      assert_select "ul.list-group" do
+        assert_select "li.list-group-item", "Guitars"
+        assert_select "li.list-group-item", 1
+      end
     end
   end
 
-  it "does not display anything if there are no matching categories" do
-
-    stub_request(:get, "http://api.reverb.com/api/categories/flat")
-      .to_return(
-        status: 200,
-        body: {categories: [{full_name: 'Guitars'}, {full_name: 'Geetars'}]}.to_json,
-        headers: {}
-      )
-
-    get categories_path(query: 'didgeridoo')
-
-    # no results
-    assert_select "ul.list-group", 0
+  context 'with no matching categories' do
+    it "does not display anything if there are no matching categories" do
+      get categories_path(query: 'didgeridoo')
+      # no results
+      assert_select "ul.list-group", 0
+    end
   end
+
 end
