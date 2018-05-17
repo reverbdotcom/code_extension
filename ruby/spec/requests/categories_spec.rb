@@ -10,9 +10,6 @@ RSpec.describe "categories page", :type => :request do
     instance_double(ReverbClient, categories: categories)
   end
 
-  let(:query) do
-  end
-
   before do
     allow(ReverbClient).to receive(:new) { client }
   end

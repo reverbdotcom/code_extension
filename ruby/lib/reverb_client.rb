@@ -22,6 +22,6 @@ class ReverbClient
   private
 
   def get(path, params={})
-    JSON.parse(HTTParty.get(base_uri + path, headers: HEADERS, query: params))
+    JSON.parse(HTTParty.get(base_uri + path, headers: HEADERS, query: params).body)
   end
 end
