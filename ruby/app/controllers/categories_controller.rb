@@ -1,5 +1,3 @@
-require 'reverb_client'
-
 class CategoriesController < ApplicationController
   def index
     @categories = search_categories(params[:query])

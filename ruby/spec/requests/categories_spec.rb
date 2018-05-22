@@ -1,5 +1,4 @@
 require 'rails_helper'
-require 'reverb_client'
 
 RSpec.describe "categories page", :type => :request do
   let(:categories) do
