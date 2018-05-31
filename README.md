@@ -16,7 +16,7 @@ This is a code extension designed so that we can code together during an on-site
 2. Our intention is not to trick you or test you; we want to collaborate. So if you have any questions about this, please reach out and ask!
 
 ### Implementing Your Own Solution
-Again, _you do not need to do this_, but if Ruby / React aren't your jams, we don't want to force you into something you don't know. So, if you'd like to use another language / framework, we welcome that. In that case, please come to the office with code that solves "Problem" stated below.
+Again, _you do not need to do this_, but if Ruby / React aren't your jams, we don't want to force you into something you don't know. So, if you'd like to use another language / framework, we welcome that. In that case, please come to the office with code that solves the "Problem" stated below.
 
 We provide an API for developers to create new experiences powered by Reverb. We'd like you to use this API to build a program with the following features:
 
