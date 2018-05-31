@@ -4,7 +4,7 @@ This is a code extension designed so that we can code together during an on-site
 
 ## Instructions
 
-1. Choose which example (ruby or React) you would like to extend. If you don't feel comfortable in either of those 2 examples, feel free to implement your own (see "Implementing Your Own Solution"). Again, _we want to see the best side of you_ so please make sure you are comfortable with what we will be working on.
+1. Choose which example (Ruby or React) you would like to extend. If you don't feel comfortable in either of those 2 examples, feel free to implement your own (see "Implementing Your Own Solution"). Again, _we want to see the best side of you_ so please make sure you are comfortable with what we will be working on.
 2. If you bring your own computer to the interview, please ensure you are ready to go by having anything installed beforehand. If you want to use one of Reverb's computers, please tell us which code editor you prefer and which language you will be doing the extension in.
 3. Familiarize yourself with the code (or write your own if you prefer) and make sure you understand how it works.
 4. That's it! We'll give you all other information during the coding session.
@@ -16,7 +16,7 @@ This is a code extension designed so that we can code together during an on-site
 2. Our intention is not to trick you or test you; we want to collaborate. So if you have any questions about this, please reach out and ask!
 
 ### Implementing Your Own Solution
-Again, _you do not need to do this_, but if ruby / React aren't your jams, we don't want to force you into something you don't know. So, if you'd like to use another language / framework, we welcome that. In that case, please come to the office with code that solves "Problem" stated below.
+Again, _you do not need to do this_, but if Ruby / React aren't your jams, we don't want to force you into something you don't know. So, if you'd like to use another language / framework, we welcome that. In that case, please come to the office with code that solves "Problem" stated below.
 
 We provide an API for developers to create new experiences powered by Reverb. We'd like you to use this API to build a program with the following features:
 
