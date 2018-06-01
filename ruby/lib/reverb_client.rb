@@ -1,3 +1,5 @@
+require 'httparty'
+
 class ReverbClient
   HEADERS = {
     'Accept' => 'application/json',

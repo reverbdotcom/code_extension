@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'reverb_client'
 
 RSpec.describe "ReverbClient" do
 
