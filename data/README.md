@@ -20,11 +20,10 @@ In this example line, we can see that each log is identified with a unique userI
 3. That's it! We'll give you all other information during the coding session.
 
 ## Our criteria
-We believe in transparency, so here's the criteria we'll be using to evaluate each submission:
+We believe in transparency, so here's the criteria we'll be using to evaluate each session:
 
-Functionality — Does your program work according to the specifications of the problem?
+Functionality — Does your program work?
 Modeling — Do your data structures fit the business objects in the problem and is the program's control flow clear?
-Documentation — Is your code appropriately documented in the form appropriate to your implementation language?
 Language Use — Do you make good use of the features available in the language you chose?
 Testing — Did you include tests that explain and reinforce the design of your code?
 Good luck!
