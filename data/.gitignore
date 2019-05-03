@@ -2,6 +2,7 @@
 .envrc
 __pycache__/
 .pytest_cache/
+*.pyc
 *.py[cod]
 *$py.class
 
