@@ -15,15 +15,12 @@ In this example line, we can see that each log is identified with a unique userI
 
 ## Instructions
 
-1. Familiarize yourself with the data
-2. If you bring your own computer to the interview, please ensure you are ready to go by having anything installed beforehand that will be able to process and analyze this data
+1. Familiarize yourself with the data. We've provided a Python skeleton app for ease, however you are encouraged to use the language and frameworks you are most comfortable with.
+2. If you bring your own computer to the interview, please ensure you are ready to go by having anything installed beforehand. If you want to use one of Reverb's computers, please tell us which code editor you prefer and which language you will be doing the extension in.
 3. That's it! We'll give you all other information during the coding session.
 
-## Our criteria
-We believe in transparency, so here's the criteria we'll be using to evaluate each session:
+## Words of Wisdom
 
-Functionality — Does your program work?
-Modeling — Do your data structures fit the business objects in the problem and is the program's control flow clear?
-Language Use — Do you make good use of the features available in the language you chose?
-Testing — Did you include tests that explain and reinforce the design of your code?
-Good luck!
+1. Our implementations are not 100% complete or refactored in the best possible way. None of the code is gospel, so don't think you have to copy our style in any way. We're open to new ways of doing things as long as we can have a dialogue about it.
+2. Our intention is not to trick you or test you; we want to collaborate. So if you have any questions about this, please reach out and ask!
+
