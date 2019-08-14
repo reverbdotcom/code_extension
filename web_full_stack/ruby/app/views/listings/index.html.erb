@@ -1,3 +1,15 @@
+<%= form_tag(listings_path, method: :get) do -%>
+  <div class="form-group">
+    <label for="query">Currency</label>
+    <input class="form-control" type="text" name="query" placeholder="FR or USD?">
+  </div>
+
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary">Filter</button>
+  </div>
+<% end %>
+
+<p>
 <% if @listings.present? %>
   <ul class="list-group">
     <% @listings.each do |listing| %>
@@ -7,6 +19,8 @@
         </div>
         <h2 class="p-2">
             <%= listing['title'] %>
+            <p>
+            <%= listing['buyer_price']['display'] %>
         </h2>
       </li>
     <% end %>
