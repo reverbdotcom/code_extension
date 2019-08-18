@@ -1,3 +1,3 @@
 class Listing < ActiveJob::Base
-  CURRENCY = ['', 'USD', 'FR']
+  CURRENCY = ['', 'USD', 'EUR']
 end
