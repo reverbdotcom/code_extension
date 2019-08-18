@@ -5,7 +5,7 @@ class ReverbClient
     'Accept' => 'application/json',
     'Accept-Version' => '3.0',
     'Content-Type' => 'application/json',
-    'X-Display-Currency' => 'USD',
+    'X-Display-Currency' => 'EUR',
     'X-Shipping-Region' => 'US_CON'
   }
 
