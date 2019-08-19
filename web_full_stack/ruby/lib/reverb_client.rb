@@ -4,6 +4,9 @@ class ReverbClient
   HEADERS = {
     'Accept' => 'application/json',
     'Accept-Version' => '3.0',
+    'Content-Type' => 'application/json',
+    'X-Display-Currency' => 'EUR',
+    'X-Shipping-Region' => 'US_CON'
   }
 
   attr_reader :base_uri
