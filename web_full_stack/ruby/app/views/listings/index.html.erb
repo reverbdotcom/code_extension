@@ -1,8 +1,15 @@
-<%= form_tag @currencies, method: 'get' do %>
+<%= form_tag(listings_path, method: :get) do -%>
 
   <div class="form-group">
+    <label for="select">Currency: </label>
     <%= select_tag @currencies,
         options_for_select(Listing::CURRENCY) %>
+  </div>
+
+  <div class="form-group">
+    <label for="select">Shipping Region: </label>
+    <%= select_tag @shipping_regions,
+        options_for_select(Listing::SHIPPING_REGION) %>
   </div>
 
   <div class="form-group">
