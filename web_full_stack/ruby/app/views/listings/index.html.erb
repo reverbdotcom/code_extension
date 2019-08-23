@@ -2,14 +2,14 @@
 
   <div class="form-group">
     <label for="select">Currency: </label>
-    <%= select_tag @currencies,
-        options_for_select(Listing::CURRENCY) %>
+    <%= select_tag "currency",
+        options_for_select(Listing::CURRENCY, params[:currency]) %>
   </div>
 
   <div class="form-group">
     <label for="select">Shipping Region: </label>
-    <%= select_tag @shipping_regions,
-        options_for_select(Listing::SHIPPING_REGION) %>
+    <%= select_tag "shipping_region",
+        options_for_select(Listing::SHIPPING_REGION, params[:shipping_region]) %>
   </div>
 
   <div class="form-group">

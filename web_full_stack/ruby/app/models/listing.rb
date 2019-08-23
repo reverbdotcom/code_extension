@@ -1,4 +1,4 @@
 class Listing < ActiveJob::Base
   CURRENCY = ['', 'USD', 'EUR']
-  SHIPPING_REGION = ['', 'Continental US', 'France']
+  SHIPPING_REGION = ['', 'US_CON', 'FR']
 end

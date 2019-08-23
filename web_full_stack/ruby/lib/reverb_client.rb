@@ -4,9 +4,7 @@ class ReverbClient
   HEADERS = {
     'Accept' => 'application/json',
     'Accept-Version' => '3.0',
-    'Content-Type' => 'application/json',
-    'X-Display-Currency' => 'EUR',
-    'X-Shipping-Region' => 'US_CON'
+    'Content-Type' => 'application/json'
   }
 
   attr_reader :base_uri
@@ -15,8 +13,10 @@ class ReverbClient
     @base_uri = base_uri
   end
 
-  def listings(per_page: 10)
-    get('/listings/all', {per_page: per_page})['listings']
+  def listings(per_page: 10, currency: 'EUR', shipping_region: 'FR')
+    pp currency
+    pp shipping_region
+    get('/listings/all', {per_page: per_page}, { 'X-Display-Currency' => currency,  'X-Shipping-Region' => shipping_region })['listings']
   end
 
   def categories
@@ -25,7 +25,8 @@ class ReverbClient
 
   private
 
-  def get(path, params={})
-    JSON.parse(HTTParty.get(base_uri + path, headers: HEADERS, query: params).body)
+  def get(path, params={}, extra_headers = {})
+    # merges the extra headers with HEADERS
+    JSON.parse(HTTParty.get(base_uri + path, headers: HEADERS.merge(extra_headers), query: params).body)
   end
 end
