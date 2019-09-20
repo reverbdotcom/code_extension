@@ -4,6 +4,7 @@ This technical challenge is focused on the issues faced by data engineers at Rev
 ## Background
 The Reverb platform generates an immense amount of log data that data engineers are responsible for collecting, parsing, and analyzing. The containins page view logs that look like this:
 
+```
 {
   "userId": 1,
   "sessionId": "{some-uuid}",
@@ -11,7 +12,9 @@ The Reverb platform generates an immense amount of log data that data engineers 
   "url": "/foo/bar",
   "experiments": "baz"
 }
-In this example line, we can see that each log is identified with a unique userId and sessionId. A user can make multiple separate page views within the same session. We can also see that the timestamp of the page view is recorded along with the URL, as well as identifiers for any A/B tests the user may be a part of. Note that while the example here is broken out into multiple lines for readability, that in the file these logs are written 1 per line. You can assume that the timestamps increase monotonically.
+```
+
+In this example line, we can see that each log is identified with a unique `userId` and `sessionId`. A user can make multiple separate page views within the same session. We can also see that the `timestamp` of the page view is recorded along with the URL, as well as identifiers for any A/B tests the user may be a part of. Note that while the example here is broken out into multiple lines for readability, that in the file these logs are written 1 per line. You can assume that the timestamps increase monotonically.
 
 ## Instructions
 
