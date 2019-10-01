@@ -10,3 +10,6 @@ You'll need [yarn](https://yarnpkg.com/en/) installed and a recent version (>= 8
 ## Running/Tests
 * `yarn run start` to start the development server.
 * `yarn run test` to start the test suite.
+
+# That's It
+Really, that's all you have to do. If everything is running, you are ready! We will provide further guidance in the office.
