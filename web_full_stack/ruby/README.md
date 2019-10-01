@@ -17,3 +17,6 @@ This is the ruby part of the code extension.
 
 `bin/rspec` runs the test suite
 
+## That's It!
+Really, that's it. If you can get things to run, you are ready! We'll provide further direction when you come into the office.
+
