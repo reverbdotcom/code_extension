@@ -1,9 +1,9 @@
 # Ruby Code Extension
 
-This is the ruby part of the code extension.
+This is the Ruby/Rails part of the code extension. Tests are written using Rspec.
 
 ## Setup
-1. Install ruby 2.5.0. We like to use rbenv, but do your thing, it's all good. (https://github.com/rbenv/rbenv)
+1. Install ruby 2.6.5. We like to use [rbenv](https://github.com/rbenv/rbenv), but do your thing, it's all good.
 
 2. `gem install bundler`
 
