@@ -43,4 +43,3 @@ describe('<ListingsPage />', () => {
     expect(page.find('img').at(1).prop('src')).toEqual('gibson.png');
   });
 });
-
