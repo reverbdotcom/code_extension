@@ -2,12 +2,19 @@
 
 This is a code extension designed so that we can code together during an on-site interview. Our guiding principal is: **we want to see you at your best** .
 
-## Instructions
+## Onsite Instructions
 
 1. Choose which example (Ruby or React) you would like to extend. If you don't feel comfortable in either of those 2 examples, feel free to implement your own (see "Implementing Your Own Solution"). Again, _we want to see the best side of you_ so please make sure you are comfortable with what we will be working on.
 2. If you bring your own computer to the interview, please ensure you are ready to go by having anything installed beforehand. If you want to use one of Reverb's computers, please tell us which code editor you prefer and which language you will be doing the extension in.
 3. Familiarize yourself with the code (or write your own if you prefer) and make sure you understand how it works.
 4. That's it! We'll give you all other information during the coding session.
+
+## Remote Instructions
+1. Choose which example (Ruby or React) you would like to extend. Follow the setup instructions for that language. If you don't feel comfortable in either of those 2 examples, feel free to implement your own (see "Implementing Your Own Solution"). Again, _we want to see the best side of you_ so please make sure you are comfortable with what we will be working on.
+2. We'll use your machine to drive. Ensure you are ready to go by having anything installed beforehand and that the project can run as-is. If you don't have access to a computer, let us know and we'll arrange an alternative setup.
+3. Familiarize yourself with the code (or write your own if you prefer) and make sure you understand how it works.
+4. That's it! We'll give you all other information during the coding session.
+
 
 ## Words of Wisdom
 
