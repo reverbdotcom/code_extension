@@ -1,6 +1,10 @@
 import json
 
 
+def datetime_to_timestamp(datetime_str):
+    #Convert datetime str to timestamp for easy comparison 
+    return datetime.strptime(datetime_str, "%Y-%m-%dT%H:%M:%S.%f").timestamp()
+
 def read(location):
     events = []
     with open(location, 'r+') as file:
