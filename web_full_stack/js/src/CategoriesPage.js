@@ -1,9 +1,8 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import { fetchCategories } from './API';
 
-export default function CategoriesPage() {
+function useCategories() {
   const [categories, setCategories] = useState([]);
-  const [query, setQuery] = useState();
 
   useEffect(() => {
     fetchCategories().then((response) => {
@@ -11,17 +10,26 @@ export default function CategoriesPage() {
     });
   }, []);
 
-  function onChange(event) {
-    setQuery(event.target.value)
-  }
+  return categories;
+}
 
-  function filteredCategories() {
-    if (!query) { return categories };
+function filteredCategories(categories, query) {
+  if (!query) { return categories };
 
-    return categories.filter((category) => {
-      return category.full_name.match(new RegExp(query, 'i'));
-    });
+  return categories.filter((category) => {
+    return category.full_name.match(new RegExp(query, 'i'));
+  });
+}
+
+function onChange(setQuery) {
+  return function(event) {
+    setQuery(event.target.value);
   }
+}
+
+export default function CategoriesPage() {
+  const categories = useCategories();
+  const [query, setQuery] = useState();
 
   return (
     <Fragment>
@@ -32,12 +40,12 @@ export default function CategoriesPage() {
         <input
           id="category-filter"
           type="text"
-          onChange={onChange}
+          onChange={onChange(setQuery)}
           placeholder="Enter a category name"
         />
       </div>
       <ul className="categories__list">
-        {filteredCategories().map((category) => (
+        {filteredCategories(categories, query).map((category) => (
           <li key={category.uuid} className="categories__list-item">
             {category.full_name}
           </li>
