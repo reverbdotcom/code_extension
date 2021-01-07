@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { fetchListings } from './API';
 
-export default function ListingsPage() {
+function useListings() {
   const [listings, setListings] = useState([]);
 
   useEffect(() => {
@@ -9,6 +9,12 @@ export default function ListingsPage() {
       setListings(response.listings)
     });
   }, []);
+
+  return listings;
+}
+
+export default function ListingsPage() {
+  const listings = useListings();
 
   return (
     <ul className="listings__list">
