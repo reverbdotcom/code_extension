@@ -1,5 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import { act } from 'react-dom/test-utils';
 import * as API from './API';
 import CategoriesPage from './CategoriesPage';
 
@@ -19,9 +20,13 @@ describe('<CategoriesPage />', () => {
 
   it('displays categories from the API on mount', async () => {
     const page = mount(<CategoriesPage />);
-    await response;
 
-    page.update();
+    await act(async () => {
+      await response;
+
+      page.update();
+    });
+
     expect(page.find('li').length).toEqual(2);
 
     expect(page.find('li').at(0).text()).toEqual('Electric Guitars');
@@ -30,9 +35,12 @@ describe('<CategoriesPage />', () => {
 
   it('filters categories', async () => {
     const page = mount(<CategoriesPage />);
-    await response;
 
-    page.update();
+    await act(async () => {
+      await response;
+
+      page.update();
+    });
 
     page.find('input').simulate('change', { target: { value: 'acoustic' } });
     expect(page.find('li').length).toEqual(1);

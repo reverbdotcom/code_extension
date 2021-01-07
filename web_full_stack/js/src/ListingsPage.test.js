@@ -1,5 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import { act } from 'react-dom/test-utils';
 import * as API from './API';
 import ListingsPage from './ListingsPage';
 
@@ -31,9 +32,12 @@ describe('<ListingsPage />', () => {
 
   it('displays listings from the API on mount', async () => {
     const page = mount(<ListingsPage />);
-    await response;
 
-    page.update();
+    await act(async () => {
+      await response;
+      page.update();
+    });
+
     expect(page.find('li').length).toEqual(2);
 
     expect(page.find('li').at(0).text()).toEqual('Fender Telecaster');
