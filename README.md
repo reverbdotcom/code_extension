@@ -10,6 +10,7 @@ These code extensions are designed so that we can code together during an on-sit
 4. That's it! We'll give you all other information during the coding session.
 
 ## Remote Instructions
+
 1. Choose the role you are interviewing for ( data / web ) and read the README there.
 2. We'll use your machine to drive. Ensure you are ready to go by having anything installed beforehand and that the project can run as-is. If you don't have access to a computer, **let us know** and we'll arrange an alternative setup.
 3. Familiarize yourself with the problem or the code.

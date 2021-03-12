@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if listings %}
+  <ul class="list-group">
+    {% for listing in listings %}
+      <li class="d-flex list-group-item flex-row align-items-center">
+        <div class="p-2">
+          <img src="{{ listing['photos'][0]['_links']['thumbnail']['href'] }}" />
+        </div>
+        <h2 class="p-2">
+          {{ listing['title'] }}
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+{% endblock %}
