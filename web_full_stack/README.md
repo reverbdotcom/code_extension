@@ -4,17 +4,23 @@ This is a code extension designed so that we can code together during an on-site
 
 ## Onsite Instructions
 
-1. Choose which example (Ruby or React) you would like to extend. If you don't feel comfortable in either of those 2 examples, feel free to implement your own (see "Implementing Your Own Solution"). Again, _we want to see the best side of you_ so please make sure you are comfortable with what we will be working on.
+1. Choose which example (Ruby, React, or Python) you would like to extend. If you don't feel comfortable in either of those 3 examples, feel free to implement your own (see "Implementing Your Own Solution"). Again, _we want to see the best side of you_ so please make sure you are comfortable with what we will be working on.
+
 2. If you bring your own computer to the interview, please ensure you are ready to go by having anything installed beforehand. If you want to use one of Reverb's computers, please tell us which code editor you prefer and which language you will be doing the extension in.
+
 3. Familiarize yourself with the code (or write your own if you prefer) and make sure you understand how it works.
+
 4. That's it! We'll give you all other information during the coding session.
 
 ## Remote Instructions
-1. Choose which example (Ruby or React) you would like to extend. Follow the setup instructions for that language. If you don't feel comfortable in either of those 2 examples, feel free to implement your own (see "Implementing Your Own Solution"). Again, _we want to see the best side of you_ so please make sure you are comfortable with what we will be working on.
-2. We'll use your machine to drive. Ensure you are ready to go by having anything installed beforehand and that the project can run as-is. If you don't have access to a computer, let us know and we'll arrange an alternative setup.
-3. Familiarize yourself with the code (or write your own if you prefer) and make sure you understand how it works.
-4. That's it! We'll give you all other information during the coding session.
 
+1. Choose which example (Ruby, React, or Python) you would like to extend. Follow the setup instructions for that language. If you don't feel comfortable in either of those 3 examples, feel free to implement your own (see "Implementing Your Own Solution"). Again, _we want to see the best side of you_ so please make sure you are comfortable with what we will be working on.
+
+2. We'll use your machine to drive. Ensure you are ready to go by having anything installed beforehand and that the project can run as-is. If you don't have access to a computer, let us know and we'll arrange an alternative setup.
+
+3. Familiarize yourself with the code (or write your own if you prefer) and make sure you understand how it works.
+
+4. That's it! We'll give you all other information during the coding session.
 
 ## Words of Wisdom
 
@@ -23,9 +29,11 @@ This is a code extension designed so that we can code together during an on-site
 2. Our intention is not to trick you or test you; we want to collaborate. So if you have any questions about this, please reach out and ask!
 
 ### Implementing Your Own Solution
-Again, _you do not need to do this_, but if Ruby / React aren't your jams, we don't want to force you into something you don't know. So, if you'd like to use another language / framework, we welcome that. In that case, please come to the office with code that solves the "Problem" stated below.
 
-We provide an API for developers to create new experiences powered by Reverb. We'd like you to use this API to build a program with the following features:
+Again, _you do not need to do this_, but if Ruby / React / Python aren't your jams, we don't want to force you into something you don't know. So, if you'd like to use another language / framework, we welcome that. In that case, please come to the office with code that solves the "Problem" stated below.
 
-- **Category Search** — Given a string, return all categories that contain that string. For example, a search for the category "Electric" would match "Electric Guitars", "Electric Pianos", etc. (Please use https://api.reverb.com/api/categories/flat and make sure you are setting the right headers https://www.reverb-api.com/docs/http-headers )
-- **Show Listings** — Show the first 10 listings from our API ( https://api.reverb.com/api/listings/all )
+We provide an API for developers to create new experiences powered by Reverb. We'd like you to use this API to build a web application with the following features:
+
+- **Category Search** — Given a string, return all categories that contain that string. For example, a search for the category "Electric" would match "Electric Guitars", "Electric Pianos", etc. (Please use https://api.reverb.com/api/categories/flat and make sure you are setting the right headers https://www.reverb-api.com/docs/http-headers ). Hook up a route that renders the results as html (it doesn't need to be pretty, just functional!).
+
+- **Show Listings** — Show the first 10 listings from our API ( https://api.reverb.com/api/listings/all ). Hook up a route that renders the results as html (it doesn't need to be pretty, just functional!).
