@@ -11,7 +11,7 @@ class ReverbClient:
     self._base_uri = base_uri
 
   def listings(self, per_page=10):
-    return self._get('/listings/all', {per_page: per_page})['listings']
+    return self._get('/listings/all', { 'per_page': per_page })['listings']
 
   def categories(self):
     return self._get('/categories/flat')['categories']
