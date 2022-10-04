@@ -4,7 +4,7 @@ const LISTINGS_URL = 'https://api.reverb.com/api/listings';
 const HEADERS = {
   Accept: 'application/json',
   'Accept-Version': '3.0',
-  'Content-Type': 'application/json'
+  'Content-Type': 'application/hal+json'
 }
 
 export async function fetchCategories() {

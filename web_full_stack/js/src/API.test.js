@@ -24,7 +24,7 @@ describe('API', () => {
           headers: {
             Accept: 'application/json',
             'Accept-Version': '3.0',
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/hal+json'
           }
         }
       );
@@ -45,7 +45,7 @@ describe('API', () => {
           headers: {
             Accept: 'application/json',
             'Accept-Version': '3.0',
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/hal+json'
           }
         }
       );
