@@ -17,7 +17,7 @@ function filteredCategories(categories, query) {
   if (!query) { return categories };
 
   return categories.filter((category) => {
-    return category.full_name.match(new RegExp(query, 'i'));
+    return category.full_name.toLowerCase().includes(query.toLowerCase());
   });
 }
 
