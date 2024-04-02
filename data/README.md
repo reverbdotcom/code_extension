@@ -1,6 +1,6 @@
-# Reverb Data Engineering Coding Challenge
+# Reverb Data Engineering Coding Extension
 
-This technical challenge is focused on the issues faced by data engineers at Reverb. There is no one correct approach - the task outline below is meant to start a conversation about domain modeling and tradeoffs.
+This technical extension is focused on the issues faced by data engineers at Reverb. There is no one correct approach - the task outline below is meant to start a conversation about domain modeling and tradeoffs.
 
 ## Background
 
