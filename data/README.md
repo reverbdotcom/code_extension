@@ -21,8 +21,9 @@ In this example, we can see that each event is identified with a unique `userId`
 ## Instructions
 
 1. Familiarize yourself with the [data](logs.txt).
-1. Familiarize yourself with the [app](python/app/) and [tests](python/test/). This is a Python skeleton app provided for ease, but you are encouraged alter it during the interview as you see fit. 
-1. That's it! We'll give you all other information during the coding session.
+1. Familiarize yourself with the [app](python/app/) and [tests](python/test/).
+2. We'll use your machine to drive. Since the interview is conducted using a cloud-based IDE, you do not need to setup anything on your computer besides a web browser. If you don't have access to a computer, **let us know** and we'll arrange an alternative setup.
+3. That's it! We'll give you all other information during the coding session.
 
 ## Other Notes
 

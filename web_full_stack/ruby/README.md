@@ -3,7 +3,10 @@
 This is the Ruby/Rails part of the code extension. Tests are written using Rspec.
 
 ## Setup
-1. Install ruby 3.1.3. We like to use [rbenv](https://github.com/rbenv/rbenv), but do your thing, it's all good.
+
+**During the interview, this application will run in a cloud-based IDE, so don't worry about running it locally. These setup instructions are purely for documentation purposes only.**
+
+1. Install Ruby based on the `.ruby-version` file. We like to use [rbenv](https://github.com/rbenv/rbenv), but do your thing, it's all good.
 
 2. `gem install bundler`
 
@@ -16,7 +19,3 @@ This is the Ruby/Rails part of the code extension. Tests are written using Rspec
 ## Running the tests
 
 `bin/rspec` runs the test suite
-
-## That's It!
-Really, that's it. If you can get things to run, you are ready! We'll provide further direction when you come into the office.
-
