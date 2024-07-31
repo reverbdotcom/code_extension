@@ -4,6 +4,8 @@ This is the Python/Flask part of the code extension. Tests are written using Pyt
 
 ## Setup
 
+**During the interview, this application will run in a cloud-based IDE, so don't worry about running it locally. These setup instructions are purely for documentation purposes only.**
+
 You'll need [pipenv](https://pypi.org/project/pipenv/) to use this project. If you're using homebrew, you can `brew install pipenv`. After pipenv is installed, do the following:
 
 1. `pipenv install`
@@ -16,6 +18,3 @@ You'll need [pipenv](https://pypi.org/project/pipenv/) to use this project. If y
 
 `pipenv run pytest -vs` runs the test suite
 
-## That's It!
-
-Really, that's it. If you can get things to run, you are ready! We'll provide further direction when you come into the office.
