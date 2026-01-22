@@ -1,0 +1,30 @@
+{
+  "name": "Reverb Code Extension",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vsliveshare.vsliveshare",
+        "ms-vsliveshare.vsliveshare-pack",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "charliermarsh.ruff"
+      ],
+      "settings": {
+        "python.testing.pytestEnabled": true,
+        "python.testing.pytestArgs": [
+          "test"
+        ],
+        "editor.formatOnSave": true,
+        "[python]": {
+          "editor.defaultFormatter": "charliermarsh.ruff"
+        },
+        "liveshare.guestApprovalRequired": false,
+        "liveshare.allowGuestDebugControl": true,
+        "liveshare.allowGuestTaskControl": true
+      }
+    }
+  },
+  "onCreateCommand": "bash .devcontainer/setup.sh",
+  "remoteUser": "vscode"
+}
