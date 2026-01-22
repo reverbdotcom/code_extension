@@ -2,6 +2,24 @@
 
 This code extension is focused on the issues faced by data engineers at Reverb. There is no one correct approach - the task outline below is meant to start a conversation about domain modeling and tradeoffs.
 
+## Quick Start
+
+```bash
+cd python
+
+# Install dependencies
+uv sync
+
+# Run tests
+uv run pytest -v
+
+# Run the application
+uv run python app/app.py
+
+# Lint code
+uv run ruff check .
+```
+
 ## Background
 
 The Reverb platform generates event data that data engineers are responsible for collecting, parsing, and analyzing. A simplified version of an event looks like this:
