@@ -5,7 +5,7 @@ This code extension is focused on the issues faced by data engineers at Reverb. 
 ## Quick Start
 
 ```bash
-cd python
+cd data/python
 
 # Install dependencies
 uv sync
